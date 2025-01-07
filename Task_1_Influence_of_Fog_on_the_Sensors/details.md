@@ -87,6 +87,9 @@ Histograms were generated to observe the variation in data distribution for clea
 #### **MMWAVCAS-RF-EVM Radar**
 
 **Clear and Foggy Conditions:**
+![Radar Clear Histogram](https://drive.google.com/file/d/1A6-pIaxchyoeduwjUNb6ktYsj8UKYkTh)
+![Radar Fog Histogram](https://drive.google.com/file/d/1iMsUrWLv931TROUXcNnj2FQncxyunn-R)
+
 <div style="display: flex; justify-content: space-around;">
   <img src="https://drive.google.com/file/d/1A6-pIaxchyoeduwjUNb6ktYsj8UKYkTh" alt="Radar Clear Histogram" width="45%">
   <img src="https://drive.google.com/file/d/1iMsUrWLv931TROUXcNnj2FQncxyunn-R" alt="Radar Fog Histogram" width="45%">
