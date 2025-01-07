@@ -1,28 +1,31 @@
-# Task 1: Influence of fog on the sensor
+# Task 1: Influence of Fog on the Sensor
 
 ## Overview
 This repository contains the implementation and analysis of the project **Influence of Fog on the Sensors** as part of the "Lidar and Radar Systems" course in the Master's program in Mechatronics at the University of Applied Sciences Ravensburg-Weingarten. The primary objective of the project is to evaluate the effect of foggy conditions on the performance of three sensors: Blickfeld Cube, Velodyne Puck, and MMWAVCAS-RF-EVM Radar.
 
 ## Authors
-- **Vardhan Mistry**  & **Vishrut Kakadiya** 
+- **Vardhan Mistry**  & **Vishrut Kakadiya**
 - **Guided by:** Prof. Dr. Stefan Elser  
 
 ## Project Structure
 ```
 CBuilding/
-├── bag/                # Contains raw bag files (if applicable)
-├── csv/                # Contains original sensor data in CSV format
-├── output_clear/       # Contains processed output for clear conditions
-├── output_fog/         # Contains processed output for foggy conditions
+├── bag/               # Contains raw bag files (if applicable)
+├── csv/               # Contains original sensor data in CSV format
+output_clear/           # Contains processed output for clear conditions
+output_fog/             # Contains processed output for foggy conditions
 details.md              # Comprehensive explanation of the project
 HowTORWUDataset.py      # Script to preprocess and handle dataset
 LICENSE                 # Licensing information for the repository
 main.ipynb              # Main Jupyter Notebook for analysis
 README.md               # Project description and setup instructions
 ```
+**Note:** The `CBuilding/` directory, including the `output_clear/`, `output_fog/`, and `HowTORWUDataset.py` file, has been removed from this repository due to the private nature of the dataset.
 
 ## Dataset
-The dataset used in this project consists of sensor data for two scenarios: clear and foggy conditions. The original dataset has been processed into CSV format, which can be found in the `CBuilding/csv` directory. The dataset was captured using the following sensors:
+The dataset used in this project consists of sensor data for two scenarios: clear and foggy conditions. Each sensor recorded more than 500 CSV files per scenario. After merging and preprocessing, the dataset size increased significantly. These processed outputs are generated in respective folders (`output_clear/` and `output_fog/`) after running the code.
+
+The dataset was captured using the following sensors:
 
 1. **Blickfeld Cube**: Lidar sensor
 2. **Velodyne Puck**: Lidar sensor
@@ -43,7 +46,6 @@ The project involves generating histograms to compare sensor performance in clea
 1. Merge CSV files for each sensor using `process_scenario`.
 2. Process and clean the data by removing unnecessary columns.
 3. Compute RMS values for each scenario and visualize the results.
-
 
 ## Results
 1. **Blickfeld Cube**: Displays wider distribution in foggy conditions due to scattered reflections.
@@ -68,3 +70,5 @@ This project is licensed under the MIT License. See the `LICENSE` file for detai
 
 ---
 **Disclaimer:** This repository is for academic purposes only, and all data belongs to the University of Applied Sciences Ravensburg-Weingarten. For permissions or inquiries, please contact Prof. Dr. Stefan Elser or the authors.
+
+
