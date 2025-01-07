@@ -4,37 +4,47 @@
 
 This project provides an in-depth analysis of the topic **Influence of Fog on the Sensors**, conducted as part of the Master's program in Mechatronics at the University of Applied Sciences Ravensburg-Weingarten. The project evaluates the performance of three different sensors under varying atmospheric conditions (clear and foggy).
 
+---
+
 ### Sensors Used
 
-1. **Blickfeld Cube (Lidar)**: A high-resolution sensor designed for precision and reliability.
-2. **Velodyne Puck (Lidar)**: A robust sensor commonly used in automotive applications.
+1. **Blickfeld Cube (Lidar)**: A high-resolution sensor designed for precision and reliability.  
+2. **Velodyne Puck (Lidar)**: A robust sensor commonly used in automotive applications.  
 3. **MMWAVCAS-RF-EVM Radar**: A radar system capable of operating effectively in adverse weather conditions.
+
+---
 
 ### Objectives
 
-1. Analyze the effect of fog on sensor performance.
-2. Compare sensor behavior in clear and foggy scenarios.
-3. Visualize the differences using RMS histograms.
+1. Analyze the effect of fog on sensor performance.  
+2. Compare sensor behavior in clear and foggy scenarios.  
+3. Visualize the differences using RMS histograms and fog condition photos.  
+
+---
 
 ## Workflow
 
 ### Data Collection
 
-Sensor data was collected for both clear and foggy conditions. The raw data files were provided in CSV format and organized into respective directories for each sensor.
+Sensor data was collected for both clear and foggy conditions. Additionally, photographs of clear and foggy test conditions were captured to provide visual context. The raw data files were provided in CSV format and organized into respective directories for each sensor.
+
+---
 
 ### Data Processing
 
-1. Merging of multiple CSV files for each sensor type.
-2. Cleaning and preprocessing of data:
-   - Dropping irrelevant columns.
-   - Calculating RMS values.
-3. Visualizing the processed data as histograms to observe distributions under different conditions.
+1. **Merging** multiple CSV files for each sensor type.  
+2. **Cleaning and preprocessing** data:  
+   - Dropping irrelevant columns.  
+   - Calculating RMS values.  
+3. **Visualizing** the processed data as histograms to observe distributions under different conditions.  
+
+---
 
 ### Analysis Methodology
 
 #### Root Mean Square (RMS) Calculation
 
-The RMS values were calculated for each row of data, representing the magnitude of the sensor readings:
+The RMS values were calculated for each row of data, representing the magnitude of the sensor readings:  
 
 $$
 \text{RMS} = \sqrt{\sum_{i=1}^{n} x_i^2}
@@ -42,78 +52,78 @@ $$
 
 #### Visualization
 
-Histograms were generated to observe the variation in data distribution for clear and foggy conditions.
+Histograms were generated to observe the variation in data distribution for clear and foggy conditions. Images of the testing conditions were also captured to contextualize sensor performance.
 
+---
+
+## Results
+
+### Sensor Histograms and Environmental Photos
+
+#### **Blickfeld Cube (Lidar)**
+
+**Clear and Foggy Conditions:**
 <div style="display: flex; justify-content: space-around;">
-  <img src="https://drive.google.com/file/d/1xhiEUqHokxLjKxtrraLYnqb8oKcj2mu1/view?usp=drive_link" alt="Blickfeld_clear" width="33%">
-  <img src="https://drive.google.com/file/d/1A6-pIaxchyoeduwjUNb6ktYsj8UKYkTh/view?usp=drive_link" alt="Radar_clear" width="33%">
-  <img src="https://drive.google.com/file/d/1FA76mXstreF4uOfHQZp8e3vFck_NxZ3Q/view?usp=drive_link" alt="Radar_clear" width="33%">
-</div>
+  <img src="https://drive.google.com/file/d/1xhiEUqHokxLjKxtrraLYnqb8oKcj2mu1/view?usp=drive_link" alt="Blickfeld Clear Histogram" width="45%">
+  <img src="https://drive.google.com/file/d/17p8pguaCtizcyMQy-c8tBYpd-qalAG_i/view?usp=drive_link" alt="Blickfeld Fog Histogram" width="45%">
+</div>  
 
-### Flowchart
+**Observation:**  
+- **Clear Conditions**: Sharp peaks indicate high precision in detecting objects, with minimal scatter.  
+- **Foggy Conditions**: Wider distribution due to scattering effects caused by fog, significantly affecting detection beyond 15 meters.  
 
-The procedural steps followed in the project are illustrated in the flowchart below:
+#### **Velodyne Puck (Lidar)**
 
-```
-Start
-  |
-  V
-[Data Collection]
-  |
-  V
-[Merge CSV Files]
-  |
-  V
-[Data Preprocessing]
-  |
-  V
-[Calculate RMS Values]
-  |
-  V
-[Generate Histograms]
-  |
-  V
-[Analyze Results]
-  |
-  V
-End
-```
+**Clear and Foggy Conditions:**
+<div style="display: flex; justify-content: space-around;">
+  <img src="https://drive.google.com/file/d/1FA76mXstreF4uOfHQZp8e3vFck_NxZ3Q/view?usp=drive_link" alt="Velodyne Clear Histogram" width="45%">
+  <img src="https://drive.google.com/file/d/1GjTYCzYtwNNJwP9j9tDHgFkZNl_Fy6YG/view?usp=drive_link" alt="Velodyne Fog Histogram" width="45%">
+</div>  
 
-### Results
+**Observation:**  
+- **Clear Conditions**: Reliable detection up to 10 meters.  
+- **Foggy Conditions**: Significant performance reduction beyond 5 meters, although near-field detection remains minimally impacted.  
 
-#### 1. Blickfeld Cube
-- **Clear Conditions**: Sharper peaks, indicating high precision.
-- **Foggy Conditions**: Wider distribution due to scattered reflections, especially beyond 15 meters.
+#### **MMWAVCAS-RF-EVM Radar**
 
-#### 2. Velodyne Puck
-- **Clear Conditions**: Accurate detection up to 10 meters.
-- **Foggy Conditions**: Reduced detection capability beyond 5 meters, with minimal difference observed up to 10 meters.
+**Clear and Foggy Conditions:**
+<div style="display: flex; justify-content: space-around;">
+  <img src="https://drive.google.com/file/d/1A6-pIaxchyoeduwjUNb6ktYsj8UKYkTh/view?usp=drive_link" alt="Radar Clear Histogram" width="45%">
+  <img src="https://drive.google.com/file/d/1iMsUrWLv931TROUXcNnj2FQncxyunn-R/view?usp=drive_link" alt="Radar Fog Histogram" width="45%">
+</div>  
 
-#### 3. MMWAVCAS-RF-EVM Radar
-- **Clear Conditions**: Capable of detecting objects up to 30 meters.
-- **Foggy Conditions**: Struggles with detection beyond 20 meters but generally less affected compared to Lidar sensors.
+**Observation:**  
+- **Clear Conditions**: Effective detection up to 30 meters with a narrow distribution.  
+- **Foggy Conditions**: Slightly reduced accuracy beyond 20 meters but generally robust performance compared to Lidar.  
 
-### Key Observations
+---
 
-1. Lidar sensors face significant challenges in fog, particularly beyond 15 meters.
-2. Radar sensors exhibit better performance in adverse weather but are still impacted at certain ranges.
-3. The choice of sensor should consider environmental conditions and desired detection range.
+
+## Key Observations
+
+1. **Lidar sensors** face significant challenges in fog, particularly beyond 15 meters.  
+2. **Radar sensors** exhibit better performance in adverse weather but are still impacted at longer ranges.  
+3. Environmental conditions and required detection ranges must guide sensor selection.  
+
+---
 
 ## Conclusion
-The analysis highlights the limitations and advantages of each sensor type in clear and foggy conditions. Lidar sensors provide excellent accuracy in clear weather but struggle in foggy scenarios. Radar sensors are less affected by fog but may offer lower resolution. This project emphasizes the importance of selecting the right sensor for specific applications based on environmental constraints.
+
+The analysis highlights the strengths and limitations of each sensor type under varying weather conditions.  
+- **Lidar sensors**: Highly accurate in clear conditions but vulnerable to scattering in fog.  
+- **Radar sensors**: More robust in fog but with lower resolution.  
+
+This study underscores the need for tailored sensor systems in adverse environments.
+
+---
 
 ## Recommendations
 
-1. **Combination of Sensors**: Using both Lidar and Radar for complementary strengths.
-2. **Improved Fog Mitigation**: Research on algorithms or hardware modifications to enhance Lidar performance in foggy conditions.
+1. **Combined Systems**: Use both Lidar and Radar to leverage complementary strengths.  
+2. **Fog Mitigation Research**: Develop advanced algorithms or hardware enhancements for better Lidar performance in fog.
+
+---
 
 ## Acknowledgments
 
-This project was supervised by **Prof. Dr. Stefan Elser**, University of Applied Sciences Ravensburg-Weingarten. The dataset and resources were provided as part of the academic curriculum.
-
-## References
-
-- [Blickfeld Cube Documentation](https://www.blickfeld.com/products/cube/)
-- [Velodyne Puck Specifications](https://velodynelidar.com/products/puck/)
-- [MMWAVCAS-RF-EVM Radar User Guide](https://www.ti.com/tool/MMWAVE-STUDIO)
-- Academic guidelines provided by Prof. Dr. Stefan Elser
+This project was supervised by **Prof. Dr. Stefan Elser**, University of Applied Sciences Ravensburg-Weingarten. The dataset, resources, and environmental photos were collected as part of the academic curriculum.
