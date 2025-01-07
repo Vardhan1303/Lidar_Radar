@@ -64,8 +64,8 @@ Histograms were generated to observe the variation in data distribution for clea
 
 **Clear and Foggy Conditions:**
 <div style="display: flex; justify-content: space-around;">
-  <img src="https://drive.google.com/file/d/1xhiEUqHokxLjKxtrraLYnqb8oKcj2mu1/view?usp=drive_link" alt="Blickfeld Clear Histogram" width="45%">
-  <img src="https://drive.google.com/file/d/17p8pguaCtizcyMQy-c8tBYpd-qalAG_i/view?usp=drive_link" alt="Blickfeld Fog Histogram" width="45%">
+  <img src="https://drive.google.com/uc?export=view&id=1xhiEUqHokxLjKxtrraLYnqb8oKcj2mu1" alt="Blickfeld Clear Histogram" width="45%">
+  <img src="https://drive.google.com/uc?export=view&id=17p8pguaCtizcyMQy-c8tBYpd-qalAG_i" alt="Blickfeld Fog Histogram" width="45%">
 </div>  
 
 **Observation:**  
@@ -76,8 +76,8 @@ Histograms were generated to observe the variation in data distribution for clea
 
 **Clear and Foggy Conditions:**
 <div style="display: flex; justify-content: space-around;">
-  <img src="https://drive.google.com/file/d/1FA76mXstreF4uOfHQZp8e3vFck_NxZ3Q/view?usp=drive_link" alt="Velodyne Clear Histogram" width="45%">
-  <img src="https://drive.google.com/file/d/1GjTYCzYtwNNJwP9j9tDHgFkZNl_Fy6YG/view?usp=drive_link" alt="Velodyne Fog Histogram" width="45%">
+  <img src="https://drive.google.com/uc?export=view&id=1FA76mXstreF4uOfHQZp8e3vFck_NxZ3Q" alt="Velodyne Clear Histogram" width="45%">
+  <img src="https://drive.google.com/uc?export=view&id=1GjTYCzYtwNNJwP9j9tDHgFkZNl_Fy6YG" alt="Velodyne Fog Histogram" width="45%">
 </div>  
 
 **Observation:**  
@@ -87,12 +87,9 @@ Histograms were generated to observe the variation in data distribution for clea
 #### **MMWAVCAS-RF-EVM Radar**
 
 **Clear and Foggy Conditions:**
-![Radar Clear Histogram](https://drive.google.com/uc?export=view&id=1A6-pIaxchyoeduwjUNb6ktYsj8UKYkTh)
-![Radar Fog Histogram](https://drive.google.com/1iMsUrWLv931TROUXcNnj2FQncxyunn-R)
-
 <div style="display: flex; justify-content: space-around;">
   <img src="https://drive.google.com/uc?export=view&id=1A6-pIaxchyoeduwjUNb6ktYsj8UKYkTh" alt="Radar Clear Histogram" width="45%">
-  <img src="https://drive.google.com/file/d/1iMsUrWLv931TROUXcNnj2FQncxyunn-R" alt="Radar Fog Histogram" width="45%">
+  <img src="https://drive.google.com/uc?export=view&id=1iMsUrWLv931TROUXcNnj2FQncxyunn-R" alt="Radar Fog Histogram" width="45%">
 </div>  
 
 **Observation:**  
