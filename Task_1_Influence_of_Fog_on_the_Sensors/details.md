@@ -44,6 +44,12 @@ $$
 
 Histograms were generated to observe the variation in data distribution for clear and foggy conditions.
 
+<div style="display: flex; justify-content: space-around;">
+  <img src="https://drive.google.com/file/d/1xhiEUqHokxLjKxtrraLYnqb8oKcj2mu1/view?usp=drive_link" alt="Blickfeld_clear" width="33%">
+  <img src="https://drive.google.com/file/d/1A6-pIaxchyoeduwjUNb6ktYsj8UKYkTh/view?usp=drive_link" alt="Radar_clear" width="33%">
+  <img src="https://drive.google.com/file/d/1FA76mXstreF4uOfHQZp8e3vFck_NxZ3Q/view?usp=drive_link" alt="Radar_clear" width="33%">
+</div>
+
 ### Flowchart
 
 The procedural steps followed in the project are illustrated in the flowchart below:
